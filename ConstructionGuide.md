@@ -95,3 +95,57 @@ return (
 ## Instalar biblioteca de Icones
 
 `npm i lucide-react`
+
+## Biome (linter e format) - organiza o código, da mesma forma, seguindo uma formatação, e escrevendo o código da mesma forma até o fim. *OPCIONAL
+
+1º `npm i @biomejs/biome -D`;
+
+2º baixar a extensão do VSCode do `Biome`;
+
+https://biomejs.dev/guides/getting-started/
+
+3º rodar para iniciar as configurações `npx @biomejs/biome init`;
+
+4º e adicionar no arquivo `biome.json`:
+```json
+    "formatter": {
+        "enabled": true,
+        "indentStyle": "space",
+        "indentWidth": 2,
+        "lineWidth": 80
+	},
+```
+5º E,
+```json
+    "javascript": {
+        "formatter": {
+            "quoteStyle": "single",
+            "trailingCommas": "es5",
+            "semicolons": "asNeeded"
+        }
+	}
+```
+
+https://biomejs.dev/reference/vscode/
+
+6º E, no ">json" `Open Workspaces Settings` do VSCode, adicionar:
+```json
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports.biome": "explicit"
+    },
+    "editor.formatOnSave": true
+}
+```
+
+7º Agora é só ir salvalndo (CTRL + S) de arquivo em arquivo!
+
