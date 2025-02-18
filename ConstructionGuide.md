@@ -92,3 +92,6 @@ return (
   );
 ```
 
+## Instalar biblioteca de Icones
+
+`npm i lucide-react`
