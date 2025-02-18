@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
+import { ComponentProps, ReactNode } from "react";
 
-interface IconButtonProps {
+interface IconButtonProps extends ComponentProps<'button'> {
     children: ReactNode;
 }
 
