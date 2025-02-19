@@ -154,3 +154,9 @@ Indentifica as classes já existentes e modifica.
     Mover o elemento em relação a sua posição atual e não a posição de quem está próximo a ele.
     `npm i tailwind-merge`
 
+### React Hook Form - para formulário
+`npm i react-hook-form`
+
+### Zod - integração com Hook Form e (bibliotacas de validação)
+`npm i zod @hookform/resolvers`
+
