@@ -149,3 +149,8 @@ https://biomejs.dev/reference/vscode/
 
 7º Agora é só ir salvalndo (CTRL + S) de arquivo em arquivo!
 
+## Merge - biblioteca do Tailwind para o className="".
+Indentifica as classes já existentes e modifica.
+    Mover o elemento em relação a sua posição atual e não a posição de quem está próximo a ele.
+    `npm i tailwind-merge`
+
